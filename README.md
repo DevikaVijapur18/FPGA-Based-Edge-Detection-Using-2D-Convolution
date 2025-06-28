@@ -1,8 +1,6 @@
 **FPGA-Based Edge Detection Using 2D Convolution**
 
-This project implements a real-time edge detection system using the Sobel operator on the PYNQ-Z2 FPGA board. It leverages Vitis HLS, Vivado,
-and the PYNQ framework to perform efficient hardware-software co-design, achieving high-speed and low-latency image processing suitable for applications such as ADAS, 
-surveillance, and medical imaging.
+This project implements an edge detection system using the Sobel operator fully in hardware on the PYNQ-Z2 FPGA board. It utilizes Vitis HLS and Vivado to design a custom hardware IP core for real-time image processing. The system achieves high-speed and low-latency performance by offloading the entire Sobel convolution operation to the FPGA, making it suitable for applications such as ADAS, surveillance, and medical imaging.
 
 **Abstract**
 
@@ -112,7 +110,7 @@ The following table summarizes the FPGA resource utilization and performance met
 
 **Key Features**
 
-->Real-time edge detection using hardware acceleration
+->Edge detection using hardware acceleration
 
 ->Efficient Sobel filter implementation using HLS
 
