@@ -90,5 +90,5 @@ def main():
     in_buffer.close()
     out_buffer.close()
     
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
