@@ -1,10 +1,10 @@
-FPGA-Based Edge Detection Using 2D Convolution
+**FPGA-Based Edge Detection Using 2D Convolution**
 
 This project implements a real-time edge detection system using the Sobel operator on the PYNQ-Z2 FPGA board. It leverages Vitis HLS, Vivado,
 and the PYNQ framework to perform efficient hardware-software co-design, achieving high-speed and low-latency image processing suitable for applications such as ADAS, 
 surveillance, and medical imaging.
 
-Abstract:
+**Abstract**
 
 Edge detection is a fundamental step in many image processing and computer vi-
 sion applications, enabling the identification of object boundaries and significant features
@@ -20,14 +20,14 @@ pared to a purely software-based implementation. This work highlights the effect
 of hardware-based acceleration in enabling efficient image processing suitable for applica-
 tions such as autonomous systems, surveillance, and medical imaging
 
-Objectives:
+**Objectives**
 
 1. To implement edge detection using FPGA-based 2D convolution.
 2. To utilize FPGA’s parallelism for fast and efficient image processing.
 3. To evaluate the system’s performance in terms of speed and accuracy.
 
 
-Tools and Technologies:
+**Tools and Technologies**
 
 | Category              | Tools / Platforms                       |
 | --------------------- | --------------------------------------- |
@@ -40,11 +40,11 @@ Tools and Technologies:
 
 
 
-System Architecture:
+**System Architecture**
 
 This project implements a fully hardware-based edge detection pipeline executed on the programmable logic (PL) of the PYNQ-Z2 FPGA. The processing is performed entirely in hardware, eliminating software-side computation of the Sobel operator.
 
-Hardware (PL - FPGA Fabric):
+**Hardware (PL - FPGA Fabric)**
 
 ->A custom-designed Sobel IP core developed using Vitis HLS
 
@@ -56,7 +56,7 @@ Hardware (PL - FPGA Fabric):
 
 ->Final edge-detected image is written back to memory and retrieved by the Python host for visualization and storage
 
-Software (PS - ARM Cortex-A9):
+**Software (PS - ARM Cortex-A9)**
 
 ->Only performs image loading and output handling
 
@@ -66,7 +66,7 @@ Software (PS - ARM Cortex-A9):
 
 
 
-Functional Workflow:
+**Functional Workflow**
 
 ->Convert RGB image to grayscale.
 
@@ -81,7 +81,7 @@ Functional Workflow:
 ->Return the edge-detected image.
 
 
-Results
+**Results**
 
 The following table summarizes the FPGA resource utilization and performance metrics of the Sobel edge detection implementation:
 
@@ -95,26 +95,22 @@ The following table summarizes the FPGA resource utilization and performance met
 
 
 
-Repository Structure:
+**Repository Structure**
 
-
-FPGA-Based-Edge-Detection-Using-2D-Convolution/
-│
-├── .gitattributes                 # Git attributes configuration
-├── README.md                     # Project overview and documentation
-├── edge_detection.py             # Python script to interface with FPGA using PYNQ
-│
-├── hls_sobel_axi_stream.cpp      # HLS top function: Sobel filter implementation
-├── hls_sobel_axi_stream.hpp      # Header file for HLS function
-├── hls_sobel_axi_stream_tb.cpp   # Testbench for simulation in C++
-│
-├── input.jpg                     # Sample input image for edge detection
-├── output.jpg                    # Edge-detected output image from FPGA
+* `.gitattributes` – Git attributes configuration
+* `README.md` – Project overview and documentation
+* `edge_detection.py` – Python script to interface with the FPGA using PYNQ
+* `hls_sobel_axi_stream.cpp` – HLS top function: Sobel filter implementation
+* `hls_sobel_axi_stream.hpp` – Header file for the HLS function
+* `hls_sobel_axi_stream_tb.cpp` – C++ testbench for simulating the HLS design
+* `input.jpg` – Sample input image for edge detection
+* `output.jpg` – Output image after FPGA-based Sobel filtering
 
 
 
 
-Key Features:
+
+**Key Features**
 
 ->Real-time edge detection using hardware acceleration
 
@@ -128,7 +124,7 @@ Key Features:
 
 
 
-Applications:
+**Applications**
 
 ->ADAS (Advanced Driver Assistance Systems): Lane detection
 
@@ -140,7 +136,7 @@ Applications:
 
 
 
-Future Enhancements:
+**Future Enhancements**
 
 ->Add Canny edge detection for improved edge quality
 
@@ -155,7 +151,7 @@ Future Enhancements:
 
 
 
-Authors:
+**Authors**
 
 Nidhi Desai 
 
@@ -165,11 +161,11 @@ Aishwarya Naik
 
 Smita Ganur 
 
-Under the guidance of Prof. Supriya K
+Under the guidance of **Prof. Supriya K**
 
 
 
-References:
+
 
 
 
