@@ -98,6 +98,21 @@ The following table summarizes the FPGA resource utilization and performance met
 Repository Structure:
 
 
+FPGA-Based-Edge-Detection-Using-2D-Convolution/
+│
+├── .gitattributes                 # Git attributes configuration
+├── README.md                     # Project overview and documentation
+├── edge_detection.py             # Python script to interface with FPGA using PYNQ
+│
+├── hls_sobel_axi_stream.cpp      # HLS top function: Sobel filter implementation
+├── hls_sobel_axi_stream.hpp      # Header file for HLS function
+├── hls_sobel_axi_stream_tb.cpp   # Testbench for simulation in C++
+│
+├── input.jpg                     # Sample input image for edge detection
+├── output.jpg                    # Edge-detected output image from FPGA
+
+
+
 
 Key Features:
 
